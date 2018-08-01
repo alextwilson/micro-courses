@@ -15,7 +15,7 @@ function CourseCard() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button size="small" color="primary" variant='contained'>
             Learn More
           </Button>
         </CardActions>
