@@ -9,7 +9,7 @@ class App extends Component {
         <Typography variant='display2' align='center' gutterBottom>
           Micro Courses
         </Typography>
-        <CourseCard />
+        <CourseCard text='Course content'/>
       </div>
     );
   }

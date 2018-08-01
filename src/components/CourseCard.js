@@ -5,13 +5,13 @@ import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-function CourseCard() {
+function CourseCard(props) {
   return (
     <div>
       <Card>
         <CardContent>
           <Typography variant='display1' align='center'>
-            Micro Course Content
+            { props.text }
           </Typography>
         </CardContent>
         <CardActions>
