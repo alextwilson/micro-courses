@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Typography from '@material-ui/core/Typography';
-import CourseCard from './components/CourseCard';
+import CoursesContainer from './components/CoursesContainer';
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
         <Typography variant='display2' align='center' gutterBottom>
           Micro Courses
         </Typography>
-        <CourseCard text='Course content'/>
+        <CoursesContainer />
       </div>
     );
   }
