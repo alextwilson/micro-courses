@@ -32,14 +32,22 @@ class DialogButton extends React.Component {
           scroll={this.state.scroll}
         >
           <DialogTitle>{this.props.course.title}</DialogTitle>
-          {this.props.course.resources.map(resource => (
-            <DialogContent key={resource.id}>
-              <img src={resource.image} alt='' height='200' width='140' />
+            <DialogContent>
               <DialogContentText>
-                {resource.description}
+                <img src={this.props.course.resource1.image} alt='' height='200' width='140' vspace="10" />
+                <br/>
+                {this.props.course.resource1.description}
+                <br/>
+                <img src={this.props.course.resource2.image} alt='' height='200' width='140' vspace="10" />
+                <br/>
+                {this.props.course.resource2.description}
+                <br/>
+                <img src={this.props.course.resource3.image} alt='' height='200' width='140' vspace="10" border='1' />
+                <br/>
+                {this.props.course.resource3.description}
+                <br/>
               </DialogContentText>
             </DialogContent>
-          ))}
           <DialogActions>
             <Button onClick={this.handleClose} color="primary">
               Close
