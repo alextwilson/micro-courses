@@ -3,8 +3,8 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActions from '@material-ui/core/CardActions';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import DialogButton from './DialogButton';
 
 function CourseCard(props) {
   return (
@@ -23,9 +23,7 @@ function CourseCard(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary" variant='contained'>
-            Learn More
-          </Button>
+          <DialogButton />
         </CardActions>
       </Card>
     </div>
