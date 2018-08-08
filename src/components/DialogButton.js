@@ -31,12 +31,15 @@ class DialogButton extends React.Component {
           onClose={this.handleClose}
           scroll={this.state.scroll}
         >
-          <DialogTitle>Dialog Title</DialogTitle>
-          <DialogContent>
-            <DialogContentText>
-              Dialog text
-            </DialogContentText>
-          </DialogContent>
+          <DialogTitle>{this.props.course.title}</DialogTitle>
+          {this.props.course.resources.map(resource => (
+            <DialogContent key={resource.id}>
+              <img src={resource.image} alt='' height='200' width='140' />
+              <DialogContentText>
+                {resource.description}
+              </DialogContentText>
+            </DialogContent>
+          ))}
           <DialogActions>
             <Button onClick={this.handleClose} color="primary">
               Close

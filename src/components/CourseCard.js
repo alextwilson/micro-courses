@@ -23,7 +23,7 @@ function CourseCard(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <DialogButton />
+          <DialogButton course={ props }/>
         </CardActions>
       </Card>
     </div>
