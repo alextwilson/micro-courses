@@ -19,7 +19,15 @@ This project has some standard React dependencies in ```react```, ```react-dom``
 - run ```npm install```
 - run ```npm start```
 
-#### Usage
+### Usage
+
+The courses are organised on cards:
+
+![Homepage](img/homepage.png)
+
+The course breakdown is found by clicking 'LEARN MORE', which displays a dialog box containing the course information:
+
+![Course](img/dialog.png)
 
 ### Testing
 
