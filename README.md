@@ -4,7 +4,7 @@ A website for short, introductory courses on a variety of topics, inspired by a 
 
 I built this as part of my ongoing project to learn more about React and its ecosystem. This project focusses on using open source components, in particular material-ui.
 
-This website is now viewable [here](http://www.micro-courses.com)!
+This website is now viewable [here](http://www.micro-courses.uk)!
 
 ### Approach
 
