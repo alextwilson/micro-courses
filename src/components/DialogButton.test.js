@@ -4,6 +4,6 @@ import DialogButton from './DialogButton';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<DialogButton />, div);
+  ReactDOM.render(<DialogButton course={{title: 'foo', resources: ['foo', 'bar']}}/>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
