@@ -34,18 +34,14 @@ class DialogButton extends React.Component {
           <DialogTitle>{this.props.course.title}</DialogTitle>
             <DialogContent>
               <DialogContentText>
-                <img src={this.props.course.resource1.image} alt='' height='200' width='140' vspace="10" />
-                <br/>
-                {this.props.course.resource1.description}
-                <br/>
-                <img src={this.props.course.resource2.image} alt='' height='200' width='140' vspace="10" />
-                <br/>
-                {this.props.course.resource2.description}
-                <br/>
-                <img src={this.props.course.resource3.image} alt='' height='200' width='140' vspace="10" border='1' />
-                <br/>
-                {this.props.course.resource3.description}
-                <br/>
+                { this.props.course.resources.map(courseItem =>
+                  <React.Fragment key={courseItem.id}>
+                    <img src={courseItem.image} alt='' height='200' width='140' vspace="10" border='1' />
+                    <br/>
+                    {courseItem.description}
+                    <br/>
+                  </React.Fragment>
+                )}
               </DialogContentText>
             </DialogContent>
           <DialogActions>
