@@ -38,7 +38,8 @@ Since this project extensively uses trusted third-party components, there wasn't
 ### Reflections
 
 Making heavy use of open source components was interesting - it was very convenient and made for some short, fast development cycles, but the lack of control over your codebase was occasionally frustrating - different components would not work well together and it was sometimes tricky to work out why. On balance, I see why component libraries are so popular and will definitely be making use of them in the future.
+UPDATE HERE
 
-The thing I am least happy with is the implementation of the DialogButton component - it is harder to change and relatively fragile in its current state, and is first on my list to refactor.
+After returning to this project and changing how DialogButton accessed course resources, I deployed this website using Heroku and a custom domain. Unfortunately, my domain provider's DNS options do not support ANAME records, only A Records, which require a static IP. Heroku uses highly dynamic IPs, so without changing DNS provider I am only able to have a website requiring ```www.```.
 
 The component I am happiest with is CourseCard and how it is used in CoursesContainer - new cards are generated when new content is added, making adding new courses very easy.
